@@ -59,7 +59,7 @@ def question3e():
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
-def question8():
+def question6():
     answerEpsilon = None
     answerLearningRate = None
     # return answerEpsilon, answerLearningRate

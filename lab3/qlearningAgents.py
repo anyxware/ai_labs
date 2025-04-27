@@ -215,9 +215,10 @@ class ApproximateQAgent(PacmanQAgent):
             "*** YOUR CODE HERE ***"
             print("Approximate Q-Learning Summary")
             print("Learning rate(alpha) : {0}".format(self.alpha))
-            print("Discount rate(gamma) : {0}".format(self.gamma))
+            # print("Discount rate(gamma) : {0}".format(self.gamma))
             print("Exploration rate(epsilon) : {0}".format(self.epsilon))
             print("Training episodes : {0}".format(self.numTraining))
-            print("=======Feature Weights=======")
-            for i in features:
-              print("{0} : {1}".format(i, self.weights[i]))
+            # print("=======Feature Weights=======")
+            # features = self.featExtractor.getFeatures(state, action)
+            # for i in features:
+            #   print("{0} : {1}".format(i, self.weights[i]))
