@@ -1,0 +1,303 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@65ca188e";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@12b63e14";
+	node_size = (130.0 55.0);
+	huginenginegenerator3061656038650325130L = "edu.ucla.belief.inference.JoinTreeSettings@237a5857";
+}
+
+node future_income
+{
+	states = ("promising" "not_promising" );
+	position = (154 -360);
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	label = "future_income";
+	DSLxPOSITIONxWIDTH = "90";
+	ID = "FutureIncome";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node reliability
+{
+	states = ("reliable" "unreliable" );
+	position = (430 -353);
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	label = "reliability";
+	DSLxPOSITIONxWIDTH = "70";
+	ID = "Reliability";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node health
+{
+	states = ("good" "normal" "bad" );
+	position = (525 -279);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "health";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node income
+{
+	states = ("high" "medium" "low" );
+	position = (145 -196);
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	label = "income";
+	DSLxPOSITIONxWIDTH = "83";
+	ID = "Profession";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node age
+{
+	states = ("between_16_and_21" "between_22_and_64" "over_65" );
+	position = (425 -195);
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	label = "age";
+	DSLxPOSITIONxWIDTH = "70";
+	ID = "Age";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node smoking_period
+{
+	states = ("never" "sometimes" "always" );
+	position = (561 -196);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable12";
+	label = "smoking_period";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node sport
+{
+	states = ("yes" "no" );
+	position = (706 -194);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable13";
+	label = "sport";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node parents
+{
+	states = ("rich" "normal" "poor" );
+	position = (-31 -196);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable14";
+	label = "parents";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node payment_history
+{
+	states = ("excellent" "acceptable" "unacceptable" );
+	position = (357 -278);
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	label = "payment_history";
+	DSLxPOSITIONxWIDTH = "93";
+	ID = "PaymentHistory";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node assets
+{
+	states = ("high" "medium" "low" );
+	position = (51 -283);
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	label = "assets";
+	DSLxPOSITIONxWIDTH = "70";
+	ID = "Worth";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node credit_worthiness
+{
+	states = ("positive" "negative" );
+	position = (284 -447);
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	label = "credit_worthiness";
+	DSLxPOSITIONxWIDTH = "100";
+	ID = "CreditWorthiness";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node debt_to_income
+{
+	states = ("low" "high" );
+	position = (278 -190);
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	label = "debt_to_income";
+	DSLxPOSITIONxWIDTH = "81";
+	ID = "RatioDebInc";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+potential ( future_income | assets income )
+{
+	data = (((	0.9	0.1	)
+		(	0.8	0.2	)
+		(	0.7	0.3	))
+		((	0.6	0.4	)
+		(	0.5	0.5	)
+		(	0.4	0.6	))
+		((	0.3	0.7	)
+		(	0.2	0.8	)
+		(	0.1	0.9	)));
+}
+potential ( reliability | payment_history age health )
+{
+	data = ((((	0.7	0.3	)
+		(	0.6	0.4	)
+		(	0.5	0.5	))
+		((	0.8	0.2	)
+		(	0.7	0.3	)
+		(	0.6	0.4	))
+		((	0.9	0.1	)
+		(	0.8	0.2	)
+		(	0.7	0.3	)))
+		(((	0.4	0.6	)
+		(	0.3	0.7	)
+		(	0.2	0.8	))
+		((	0.5	0.5	)
+		(	0.4	0.6	)
+		(	0.3	0.7	))
+		((	0.6	0.4	)
+		(	0.5	0.5	)
+		(	0.4	0.6	)))
+		(((	0.1	0.9	)
+		(	0.1	0.9	)
+		(	0.0	1.0	))
+		((	0.2	0.8	)
+		(	0.1	0.9	)
+		(	0.0	1.0	))
+		((	0.3	0.7	)
+		(	0.2	0.8	)
+		(	0.1	0.9	))));
+}
+potential ( health | age smoking_period sport )
+{
+	data = ((((	0.6	0.35	0.05	)
+		(	0.5	0.4	0.1	))
+		((	0.5	0.4	0.1	)
+		(	0.4	0.45	0.15	))
+		((	0.4	0.45	0.15	)
+		(	0.3	0.5	0.2	)))
+		(((	0.5	0.4	0.1	)
+		(	0.4	0.45	0.15	))
+		((	0.4	0.45	0.15	)
+		(	0.3	0.5	0.2	))
+		((	0.3	0.5	0.2	)
+		(	0.2	0.55	0.25	)))
+		(((	0.4	0.45	0.15	)
+		(	0.3	0.5	0.2	))
+		((	0.3	0.5	0.2	)
+		(	0.2	0.55	0.25	))
+		((	0.2	0.55	0.25	)
+		(	0.1	0.6	0.3	))));
+}
+potential ( income | )
+{
+	data = (	0.2	0.5	0.3	);
+}
+potential ( age | )
+{
+	data = (	0.2	0.5	0.3	);
+}
+potential ( smoking_period | )
+{
+	data = (	0.30000000000000004	0.35000000000000003	0.35000000000000003	);
+}
+potential ( sport | )
+{
+	data = (	0.5	0.5	);
+}
+potential ( parents | )
+{
+	data = (	0.05	0.7	0.25	);
+}
+potential ( payment_history | age debt_to_income )
+{
+	data = (((	0.15	0.25	0.6	)
+		(	0.1	0.2	0.7	))
+		((	0.3	0.4	0.3	)
+		(	0.2	0.3	0.5	))
+		((	0.4	0.5	0.1	)
+		(	0.35	0.45	0.2	)));
+}
+potential ( assets | income parents )
+{
+	data = (((	0.8	0.1	0.1	)
+		(	0.5	0.3	0.2	)
+		(	0.4	0.4	0.2	))
+		((	0.7	0.15	0.15	)
+		(	0.4	0.35	0.25	)
+		(	0.3	0.4	0.3	))
+		((	0.6	0.2	0.2	)
+		(	0.3	0.3	0.4	)
+		(	0.1	0.3	0.6	)));
+}
+potential ( credit_worthiness | reliability future_income debt_to_income )
+{
+	data = ((((	0.9	0.1	)
+		(	0.8	0.2	))
+		((	0.7	0.3	)
+		(	0.6	0.4	)))
+		(((	0.5	0.5	)
+		(	0.4	0.6	))
+		((	0.3	0.7	)
+		(	0.2	0.8	))));
+}
+potential ( debt_to_income | )
+{
+	data = (	0.4	0.6	);
+}
