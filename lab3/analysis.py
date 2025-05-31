@@ -21,7 +21,7 @@
 
 def question2():
     answerDiscount = 0.9
-    answerNoise = 0.002
+    answerNoise = 0
     return answerDiscount, answerNoise
 
 def question3a():
@@ -59,7 +59,7 @@ def question3e():
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
-def question8():
+def question6():
     answerEpsilon = None
     answerLearningRate = None
     # return answerEpsilon, answerLearningRate
